@@ -1,0 +1,22 @@
+using System;
+namespace Factorial
+{
+class Program
+{
+static void Main(string[] args)
+{
+int factorial;
+int number;
+
+Console.Write("Enter a number :");
+number=ConvertToInt32(Console.ReadLine());
+
+while(number>0)
+{
+factorial=number*(number-1);
+number=number-2;
+}
+ Console.Write("The factorial is :"+ factorial);
+}
+}
+}

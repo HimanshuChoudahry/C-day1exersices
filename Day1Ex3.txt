@@ -1,0 +1,38 @@
+using System;
+namespace Greater
+{
+class Program
+{
+static void Main(string[] args)
+{
+int number1;
+int number2;
+int number3;
+int greatest;
+
+Console.WriteLine("Enter the 1st number : ");
+number1=Convert.ToInt32(Convert.ReadLine());
+
+Console.WriteLine("Enter the 2nd number : ");
+number2=Convert.ToInt32(Convert.ReadLine());
+
+Console.WriteLine("Enter the 3rd number : ");
+number3=Convert.ToInt32(Convert.ReadLine());
+
+if(number1 > number2)
+{
+greatest=number1;
+}
+else
+{
+greatest=number2;
+}
+if(greatest < number3)
+{
+greatest = number3;
+}
+
+Console.Write("The greatest number is :"+greatest);
+}
+}
+}

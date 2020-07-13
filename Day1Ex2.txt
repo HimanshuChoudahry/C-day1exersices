@@ -1,0 +1,24 @@
+using System;
+namespace Exchange
+{
+class Program
+{
+static void Main(string[] args)
+{
+int variable1;
+int variable2;
+int exchange;
+
+Console.Write("Enter the 1st variable : ");
+variable1=Convert.ToInt32(Convert.ReadLine());
+ 
+Console.Write("Enter the 2nd variable : ");
+variable2=Convert.ToInt32(Convert.ReadLine());
+
+exchange=variable1;
+variable1=variable2;
+variable2=exchange;
+
+}
+}
+}

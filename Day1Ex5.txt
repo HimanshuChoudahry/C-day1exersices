@@ -1,0 +1,24 @@
+using System;
+namespace Sum
+{
+class Program 
+{
+static void Maim(string[] args)
+{
+int number;
+int sum=0;
+int i;
+
+Console.Write("Enter the number : ");
+number=Convert.ToInt32(Convert.ReadLine()); 
+
+while(number > 0)
+{
+i=number%10;
+sum=sum+i;
+number=number/10;
+}
+Console.Write("Sum of the digits is=" + sum);
+}
+}
+}
